@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Post;
 
 class PostsTableSeeder extends Seeder
 {
@@ -12,7 +13,7 @@ class PostsTableSeeder extends Seeder
     public function run()
     {
         // Remove any existing data
-        DB::table('pages')->truncate();
+        DB::table('posts')->truncate();
         $faker = Faker\Factory::create();
         // Generate some dummy data
         for($i=0; $i<30; $i++) {

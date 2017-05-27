@@ -14,7 +14,7 @@ return array(
     */
 
     'config' => [
-        'hosts'     => ['elasticsearch.dev'],
+        'hosts'     => ['localhost:9200'],
         'retries'   => 1,
     ],
 

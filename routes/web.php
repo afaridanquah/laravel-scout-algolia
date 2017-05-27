@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', ['as'=>'items-lists','uses'=>'ItemSearchController@index']);
+Route::post('create-item', ['as'=>'create-item','uses'=>'ItemSearchController@create']);
